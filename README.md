@@ -7,4 +7,4 @@ This is a CLI app which tests your knowledge on Gujarat and keeps track of your 
 
 ### Question credits:
  * [GKDUNIYA](https://www.gkduniya.com/gujarat-state-quiz)
- * [Scoop Whoop](https://www.scoopwhoop.com/inothernews/interesting-india/)
+ * []()
