@@ -1,0 +1,78 @@
+{
+    "questionList":[{
+        "id":"1",
+        "question":"Which one is the longest river in Gujarat?",
+        "optionA":"(A) Sabarmati",
+        "optionB":"(B) Mahi",
+        "optionC":"(C) Narmada",
+        "optionD":"(D) Tapi",
+        "Answer": "(C) Narmada",
+        "CorrectOption":"C"
+    },
+    {
+        "id":"2",
+        "question":"On which river the Sardar Sarovar Dam is built?",
+        "optionA":"(A) Daman Ganga River",
+        "optionB":"(B) Tapti River",
+        "optionC":"(C) Sabarmati River",
+        "optionD":"(D) Narmada River",
+        "Answer": "(D) Narmada River",
+        "CorrectOption":"D"
+    },{
+        "id":"3",
+        "question":"Sabarmati Ashram was built in the year?",
+        "optionA":"(A) 1917",
+        "optionB":"(B) 1919",
+        "optionC":"(C) 1920",
+        "optionD":"(D) 1922",
+        "Answer": "(A) 1917",
+        "CorrectOption":"A"
+    },{
+        "id": "4",
+        "question":"Total number of Districts in Gujarat?",
+        "optionA":"(A) 28",
+        "optionB":"(B) 33",
+        "optionC":"(C) 35",
+        "optionD":"(D) 39",
+        "Answer":"(B) 33",
+        "CorrectOption":"B"
+    },{
+        "id":"5",
+        "question":"Which city is also known as the Diamond City of India?",
+        "optionA":"(A) Rajkot",
+        "optionB":"(B) Surat",
+        "optionC":"(C) Gandhinagar",
+        "optionD":"(D) Ahmedabad",
+        "Answer": "(B) Surat",
+        "CorrectOption":"B" 
+    },
+    {
+        "id":"6",
+        "question":"Who had built the Sun Temple of Modhera?",
+        "optionA":"(A) Bhimdev I",
+        "optionB":"(B) Karandev I",
+        "optionC":"(C) Siddharaj Jaisinh",
+        "optionD":"(D) Kumarapala",
+        "Answer": "(A) Bhimdev I",
+        "CorrectOption":"A"
+    },{
+        "id":"7",
+        "question":"The UNESCO heritage site \"Rani ki vav\" is located in which district?",
+        "optionA":"(A) Bharuch",
+        "optionB":"(B) Amreli",
+        "optionC":"(C) Bhavnagar",
+        "optionD":"(D) Patan",
+        "Answer": "(D) Patan",
+        "CorrectOption":"D"
+    },{
+        "id": "8",
+        "question":" when did gujarat Formation?",
+        "optionA":"(A) 15 Aug 1947",
+        "optionB":"(B) 1 May 1960",
+        "optionC":"(C) 1 May 1980",
+        "optionD":"(D) 23 Sep 1990",
+        "Answer":"(B) 1 May 1960",
+        "CorrectOption":"B"
+    }
+  ]
+}
