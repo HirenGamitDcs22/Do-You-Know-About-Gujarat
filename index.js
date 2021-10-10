@@ -67,6 +67,7 @@ var begin=()=>{
 begin();
 
 function comparScore(){
+  log(scoreList);
   const flag=scoreList.filter(s=>parseInt(s.score)<=parseInt(score));
   log("flag: " + flag);
   if(flag.length>=0){
