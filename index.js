@@ -2,11 +2,6 @@ const rs=require("readline-sync");
 const jsondata=require("./about-Gujarat.json");
 const chalk=require("chalk");
 
-/* const rl=readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-}); */
-
 var PlayerName="";
 var score=0;
 var questionlist=[];
@@ -42,8 +37,8 @@ var askQuestion=(q) => {
 }
 
 var startGame = ()=>{
-    PlayerName=rs.question(cyan("What is Your Name? "));
-    log(yellow(`Hello ${PlayerName}`));
+    PlayerName=rs.question(cyan("\nWhat is Your Name? "));
+    log(green(`Hello ${PlayerName}!`));
     log("\nThere will be 10 questions.\nAnswer them with", green("a (for Option A) or b (for Option B) or c (for Option C) or d (for Option D)"), "\n")
     log(cyan("+5 points for correct answer. -2 for wrong answer.\n"));
     questionlist=jsondata.questionList;
