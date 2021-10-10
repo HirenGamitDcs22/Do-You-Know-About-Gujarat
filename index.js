@@ -1,8 +1,9 @@
-const rs=require("readline-sync");
+var rs=require("readline-sync");
 const jsondata=require("./about-Gujarat.json");
-const scorelist=require("./scoreList.json");
+var scorelist=require("./scoreList.json");
 const chalk=require("chalk");
 const fs=require("fs");
+const jsonbase=require("jsonbase.com");
 
 var PlayerName="";
 var score=0;
@@ -84,7 +85,7 @@ function comparScore(){
         parseJson.socreBoard.push(newScore);
         fs.writeFile('scoreList.json',JSON.stringify(parseJson),function(err){
           if(err) throw err;
-          log("hello world");
+          log("\n Scoreboard updated");
         })
       })
     log(green("Congratulations! You have a new highscore."));
@@ -107,9 +108,10 @@ function displayScoreBoard(){
   scoreList.sort(function(a, b) {
     return b.score - a.score;
   })
+
   log(yellow("\nCurrent Scoreboard:"))
   
   for(player of scoreList){
-    log(`Name: ${green(player.Name)}. Score: ${green(player.score)}`)
+    log(`Name: ${green(player.Name)}  Score: ${green(player.score)}`)
   }
 }
