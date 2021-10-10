@@ -82,6 +82,15 @@
       "optionD":"(D) Ranthambore National Park",
       "Answer":"(A) Gir National Park",
       "CorrectOption":"A"
+    },{
+      "id":"10",
+      "question":"Which one is an ancient Indus valley civilization city located in Gujarat?",
+      "optionA":"(A) Harappa",
+      "optionB":"(B) Mehargarh",
+      "optionC":"(C) Lothal",
+      "optionD":"(B) Mehargarh",
+      "Answer":"(C) Lothal",
+      "CorrectOption":"C"
     }
   ]
 }
