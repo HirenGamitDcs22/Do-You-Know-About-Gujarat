@@ -70,7 +70,6 @@ begin();
 function comparScore(){
   log(scoreList);
   const flag=scoreList.filter(s=>parseInt(s.score)<=parseInt(score));
-  log("flag: " + flag);
   if(flag.length>=0){
     if(scoreList.length===5){
         scoreList.sort(function(a,b){
@@ -79,6 +78,7 @@ function comparScore(){
         scoreList.pop();
     }
     const newScore={"Name":PlayerName,"score":score}
+    scoreList.push(newScore);
     fs.readFile('scoreList.json',function(err,content){
         if(err) throw err;
         var parseJson = JSON.parse(content);
@@ -90,14 +90,6 @@ function comparScore(){
       })
     log(green("Congratulations! You have a new highscore."));
     displayScoreBoard()
-    //jsondata.scoreBoard=scoreList;
-
-    // Update new scoreboard to jsonbase
-   /*  store.write('scoreboard',scoreboard).then( () => {
-      log("\nScoreboard updated")
-      
-      displayScoreBoard();
-    }) */
   }else {
     log(red("\nYou couldn't beat the highscore. Better luck next time!"))
 
