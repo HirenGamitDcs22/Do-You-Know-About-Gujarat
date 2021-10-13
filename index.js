@@ -83,8 +83,9 @@ function comparScore(){
         var parseJson = JSON.parse(content);
         parseJson.socreBoard.push(newScore);
         fs.writeFile('scoreList.json',JSON.stringify(parseJson),function(err){
-          if(err) throw err;
-          log("\n Scoreboard updated");
+          if(err){
+            log(err)
+          }
         })
       })
     log(green("Congratulations! You have a new highscore."));

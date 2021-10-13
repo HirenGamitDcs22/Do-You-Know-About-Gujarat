@@ -91,6 +91,95 @@
       "optionD":"(B) Mehargarh",
       "Answer":"(C) Lothal",
       "CorrectOption":"C"
+    },{
+      "id":"11",
+      "question":"Which one is the latest site to include as World Heritage Site in 2021?",
+      "optionA":"(A) Surkotada",
+      "optionB":"(B) Ahmedabad",
+      "optionC":"(C) Dholavira",
+      "optionD":"(D) Rani ki Vav",
+      "Answer":"(A) Surkotada",
+      "CorrectOption":"A"
+    },{
+      "id":"12",
+      "question":"Which one was the first capital of Gujarat Sultanate?",
+      "optionA":"(A) Ahmedabad",
+      "optionB":"(B) Anhilwad Patan",
+      "optionC":"(C) Muhammadabad",
+      "optionD":"(D) None of the above",
+      "Answer":"(B) Anhilwad Patan",
+      "CorrectOption":"B"
+    },{
+      "id":"13",
+      "question":"Which Mughal Emperor was born at Dahod in Gujarat?",
+      "optionA":"(A) Akbar",
+      "optionB":"(B) Shah Jahan",
+      "optionC":"(C) Aurangzeb",
+      "optionD":"(D) Bahadur Shah I",
+      "Answer":"(C) Aurangzeb",
+      "CorrectOption":"C"
+    },{
+      "id":"14",
+      "question":"In which year, the construction of Sardar Sarovar Dam was started?",
+      "optionA":"(A) 1982",
+      "optionB":"(B) 1985",
+      "optionC":"(C) 1987",
+      "optionD":"(D) 1990",
+      "Answer":"(C) 1987",
+      "CorrectOption":"C"
+    },{
+      "id":"15",
+      "question":"Total number of memebers in the Gujarat Legislative Assembly is............",
+      "optionA":"(A) 156",
+      "optionB":"(B) 171",
+      "optionC":"(C) 180",
+      "optionD":"(D) 182",
+      "Answer":"(D) 182",
+      "CorrectOption":"D"
+    },{
+      "id":"16",
+      "question":"Which poet had been named as Raashtreeya Shaayar by Mahatma Gandhi",
+      "optionA":"(A) Umashankar Jethalal Joshi",
+      "optionB":"(B) Avinash Vyas",
+      "optionC":"(C) Jhaverchand Meghani",
+      "optionD":"(D) Govardhanram Tripathi",
+      "Answer":"(C) Jhaverchand Meghani",
+      "CorrectOption":"C"
+    },{
+      "id":"17",
+      "question":"Gujarat is the ________ largest state in Indian by area",
+      "optionA":"(A) third",
+      "optionB":"(B) fourth",
+      "optionC":"(C) fifth",
+      "optionD":"(D) sixth",
+      "Answer":"(C) fifth",
+      "CorrectOption":"C"
+    },{
+      "id":"18",
+      "question":"Who is the first person from Gujarat to received Padma Vibhushan award",
+      "optionA":"(A) U.N. Dhebar",
+      "optionB":"(B) Gulzari Lal Nanda",
+      "optionC":"(C) Indraprasad Gordhanbhai Patel",
+      "optionD":"(D) Vikram Ambalal Sarabhai",
+      "Answer":"(D) Vikram Ambalal Sarabhai",
+      "CorrectOption":"D"
+    },{
+      "id":"19",
+      "question":"The Vansda National Park is located in which district",
+      "optionA":"(A) Navsari",
+      "optionB":"(B) Junagadh",
+      "optionC":"(C) Bhavnagar",
+      "optionD":"(D) Jamnagar"
+      "Answer":"(A) Navsari",
+      "CorrectOption":"A"
+    },{
+      "id":"20",
+      "question":"As of 2021, total number of wildlife sanctuaries in Gujarat is",
+      "optionA":"(A) 22 sanctuaries",
+      "optionB":"(B) 23 sanctuaries",
+      "optionC":"(C) 24 sanctuaries",
+      "optionD":"(D) 25 sanctuaries",
+      "Answer":"(B) 23 sanctuaries",
+      "CorrectOption":"B"
     }
-  ]
 }
