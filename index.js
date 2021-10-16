@@ -3,7 +3,6 @@ const jsondata=require("./about-Gujarat.json");
 var scorelist=require("./scoreList.json");
 const chalk=require("chalk");
 const fs=require("fs");
-const jsonbase=require("jsonbase.com");
 
 var PlayerName="";
 var score=0;
@@ -18,6 +17,7 @@ const blueBright=chalk.bold.blueBright;
 const cyan=chalk.bold.cyan;
 const yellow=chalk.bold.yellow;
 
+//Check Answer is Correct or not
 var checkAns=(ans,correctAnswer)=>{
     if(ans.toLowerCase() === correctAnswer.toLowerCase()) {
         score+=5;
@@ -28,6 +28,7 @@ var checkAns=(ans,correctAnswer)=>{
     }
 }
 
+//Print Questions 
 var askQuestion=(q,i) => {
     log(yellow(1+parseInt(i),q.question));
     log(yellow(q.optionA));
@@ -35,7 +36,8 @@ var askQuestion=(q,i) => {
     log(yellow(q.optionC));
     log(yellow(q.optionD));
     var correctAnswer=q.CorrectOption;
-    var ans=rs.question("");
+    //Get Answer
+    var ans=rs.question("Answer: ");
     return checkAns(ans,correctAnswer);
 }
 
@@ -43,7 +45,7 @@ var startGame = ()=>{
     PlayerName=rs.question(cyan("\nWhat is Your Name? "));
     log(green(`Hello ${PlayerName}!`));
     log("\nThere will be 10 questions.\nAnswer them with", green("a (for Option A) or b (for Option B) or c (for Option C) or d (for Option D)"), "\n")
-    log(cyan("+5 points for correct answer. -2 for wrong answer.\n"));
+    log(cyan(green("+5")+" points for correct answer."+red(" -2")+" for wrong answer.\n"));
     scoreList=scorelist.socreBoard;
     questionlist=jsondata.questionList;
     const randomquestion=questionlist.sort(()=>.5-Math.random()).slice(0,10);
@@ -69,12 +71,18 @@ begin();
 
 function comparScore(){
   const flag=scoreList.filter(s=>parseInt(s.score)<=parseInt(score));
-  if(flag.length>=0){
-    if(scoreList.length===5){
+  for(i of flag){
+    log(i);
+    log(flag.length)
+  }
+  if(flag.length > 0){
+    if(scoreList.length === 5){
         scoreList.sort(function(a,b){
             return b.score-a.score;
         });
+        log(scoreList)
         scoreList.pop();
+        log(scoreList)
     }
     const newScore={"Name":PlayerName,"score":score}
     scoreList.push(newScore);
