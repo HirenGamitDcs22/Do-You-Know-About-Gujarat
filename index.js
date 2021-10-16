@@ -71,24 +71,22 @@ begin();
 
 function comparScore(){
   const flag=scoreList.filter(s=>parseInt(s.score)<=parseInt(score));
-  for(i of flag){
-    log(i);
-    log(flag.length)
-  }
   if(flag.length > 0){
     if(scoreList.length === 5){
         scoreList.sort(function(a,b){
             return b.score-a.score;
         });
-        log(scoreList)
         scoreList.pop();
-        log(scoreList)
     }
     const newScore={"Name":PlayerName,"score":score}
     scoreList.push(newScore);
     fs.readFile('scoreList.json',function(err,content){
         if(err) throw err;
         var parseJson = JSON.parse(content);
+        parseJson.socreBoard.sort(function(a,b){
+          return b.score-a.score;
+        });
+        parseJson.socreBoard.pop();
         parseJson.socreBoard.push(newScore);
         fs.writeFile('scoreList.json',JSON.stringify(parseJson),function(err){
           if(err){
@@ -99,8 +97,28 @@ function comparScore(){
     log(green("Congratulations! You have a new highscore."));
     displayScoreBoard()
   }else {
-    log(red("\nYou couldn't beat the highscore. Better luck next time!"))
-
+    if(scoreList.length < 5){
+      const newScore={"Name":PlayerName,"score":score}
+      scoreList.push(newScore);
+      fs.readFile('scoreList.json',function(err,content){
+        if(err) throw err;
+        var parseJson = JSON.parse(content);
+        parseJson.socreBoard.sort(function(a,b){
+          return b.score-a.score;
+        });
+        parseJson.socreBoard.pop();
+        parseJson.socreBoard.push(newScore);
+        fs.writeFile('scoreList.json',JSON.stringify(parseJson),function(err){
+          if(err){
+            log(err)
+          }
+        })
+      })
+      log(green("Congratulations! You have a new highscore."));
+    }
+    else{
+      log(red("\nYou couldn't beat the highscore. Better luck next time!"))
+    }
     displayScoreBoard()
   }
 }
