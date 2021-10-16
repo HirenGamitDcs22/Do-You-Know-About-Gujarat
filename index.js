@@ -103,10 +103,6 @@ function comparScore(){
       fs.readFile('scoreList.json',function(err,content){
         if(err) throw err;
         var parseJson = JSON.parse(content);
-        parseJson.socreBoard.sort(function(a,b){
-          return b.score-a.score;
-        });
-        parseJson.socreBoard.pop();
         parseJson.socreBoard.push(newScore);
         fs.writeFile('scoreList.json',JSON.stringify(parseJson),function(err){
           if(err){
